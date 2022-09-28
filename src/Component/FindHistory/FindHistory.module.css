@@ -1,0 +1,91 @@
+.container {
+  margin-top: 15px;
+}
+.container > div > p {
+  font-weight: 500;
+  margin-left: 5px;
+}
+.container > p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(0, 0, 0, 0.7);
+}
+.findHeader_container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+  align-items: center;
+}
+.deleteHistory_btn {
+  color: rgb(70, 70, 247);
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.deleteHistory_btn:hover {
+  cursor: pointer;
+  background-color: rgba(218, 218, 218, 0.2);
+}
+.notFoundText {
+  width: 100%;
+  color: rgb(0, 0, 0, 0.5);
+  text-align: center;
+}
+.result_container {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: -5px;
+}
+.result_container:hover {
+  background-color: rgba(214, 208, 208, 0.3);
+  cursor: pointer;
+}
+.result_container > div > p {
+  margin: auto 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 210px;
+  font-weight: 700;
+  font-size: 17px;
+}
+.emailText {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: rgb(0, 0, 0, 0.8);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.options {
+  margin: auto 5px;
+}
+
+.options_container {
+  display: none;
+  flex: 1;
+  text-align: right;
+}
+.result_container:hover > .options_container {
+  display: block;
+}
+.card {
+  color: rgb(123, 123, 253);
+}
+.card:hover {
+  color: rgb(0, 0, 255);
+}
+.friend {
+  color: rgb(30, 255, 0);
+}
+.add {
+  color: rgb(252, 124, 124);
+}
+.add:hover {
+  color: rgb(255, 0, 0);
+}
+.replace {
+  color: rgb(0, 106, 255);
+}

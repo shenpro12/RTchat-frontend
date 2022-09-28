@@ -1,0 +1,26 @@
+.container {
+  z-index: 10;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.container > div > p {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+}
+.center {
+  margin: auto;
+  color: white;
+  margin-left: 5px;
+}
+.container > div {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 47vh;
+  border-radius: 10px;
+  padding: 5px 10px;
+}

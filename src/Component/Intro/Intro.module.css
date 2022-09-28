@@ -1,0 +1,47 @@
+.container {
+  background-color: white;
+  word-wrap: break-word;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  z-index: -1;
+}
+.container > h1 {
+  background: linear-gradient(90deg, #ff0090 0%, #784ba0 50%, #0173c4 100%);
+  background-clip: text;
+  display: inline-block;
+  color: transparent;
+  padding-top: 15vh;
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.container > p {
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 0px 60px;
+}
+.image {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: 0.6s ease;
+}
+.active {
+  opacity: 1 !important;
+}
+.image > img {
+  object-fit: cover;
+  width: 35%;
+}
+.image > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0091ff;
+}
+
+@media (max-width: 998px) {
+  .container {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.container {
+  margin-top: 15px;
+}
+.container > p {
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 2%;
+}
+.friendInfo_container {
+  display: flex;
+  padding: 10px;
+  transition: 0.2s linear;
+}
+.friendInfo_container > p {
+  margin: auto 0px auto 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.friendInfo_container:hover {
+  background-color: rgba(212, 206, 206, 0.2);
+  cursor: pointer;
+}
+.options {
+  margin: auto 5px;
+}
+
+.options_container {
+  display: none;
+  flex: 1;
+}
+.active {
+  background-color: rgba(144, 210, 251, 0.2) !important;
+}
+.friendInfo_container:hover > .options_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.card {
+  color: rgb(123, 123, 253);
+}
+.card:hover {
+  color: rgb(0, 0, 255);
+}
+.delete {
+  color: rgb(252, 124, 124);
+}
+.delete:hover {
+  color: rgb(253, 0, 0);
+}
+.name {
+  max-width: 200px;
+}

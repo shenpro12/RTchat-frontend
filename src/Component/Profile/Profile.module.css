@@ -1,0 +1,236 @@
+.container {
+  z-index: 10;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.profile_container {
+  background-color: white;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 352px;
+  height: 80vh;
+  border-radius: 10px;
+  margin: 10vh auto 0% auto;
+}
+.profile_container > .header_container {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header {
+  margin: auto 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profile_container > div > svg:hover {
+  cursor: pointer;
+  background-color: rgba(161, 159, 159, 0.3);
+}
+.profile_container > div > svg {
+  padding: 5px 8px;
+  border-radius: 80%;
+}
+.profile {
+  background-color: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.profile::-webkit-scrollbar {
+  display: none;
+}
+.profile > div > .name {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+.user_info_text {
+  margin-left: 20px;
+  font-weight: 400;
+}
+.info_text {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+table {
+  width: 95%;
+  margin-left: 15px;
+}
+.text_header {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+td {
+  padding: 7px;
+}
+.update_button {
+  width: 80%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0px auto 20px auto;
+  text-align: center;
+}
+.update_button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.update_button > p {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0px 0px 0px 10px;
+  font-weight: 500;
+}
+.gender {
+  display: flex;
+}
+.label_text {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  margin-top: 13px;
+  font-weight: 500;
+}
+.gender > div {
+  display: flex;
+  margin-left: 20px;
+}
+.gender > div > input {
+  height: 18px;
+  width: 18px;
+  margin: auto 0px;
+}
+.gender > div > p {
+  margin: auto 0px auto 10px;
+  font-size: 16px;
+}
+.date_time {
+  width: 45%;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.phone_input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+}
+.phone_input_container {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  border-radius: 5px;
+}
+.phone_input_container:focus-within {
+  border: 1px solid blue;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.button > p {
+  padding: 5px 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.button > p:hover {
+  cursor: pointer;
+}
+.cancel_update {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.cancel_update:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.update_active {
+  background-color: rgb(60, 60, 247);
+  color: white;
+}
+.update_active:hover {
+  background-color: rgb(0, 0, 255);
+}
+.update_disable {
+  background-color: rgb(180, 180, 255);
+  color: white;
+  cursor: default !important;
+}
+.name_input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  width: 100%;
+}
+.name_input_container {
+  margin: 0px auto;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.name_input_container:focus-within {
+  border: 1px solid blue;
+}
+.note {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.camera {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background-color: white;
+  border-radius: 30px;
+}
+.camera:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.camera_input {
+  display: none;
+}
+.radio_button:hover {
+  cursor: pointer;
+}
+.loading_container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading_container > p {
+  color: white;
+  font-weight: 700;
+  margin: 0px;
+  font-size: 18px;
+}

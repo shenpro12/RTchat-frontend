@@ -1,0 +1,94 @@
+.container {
+  margin-top: 15px;
+}
+.container > p {
+  font-weight: 500;
+  padding-bottom: 5px;
+  padding-left: 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.MessageItem_container {
+  display: flex;
+  padding: 10px;
+  transition: 0.2s linear;
+}
+.MessageItem_container > div > p {
+  margin-left: 5px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+}
+.MessageItem_container:hover {
+  background-color: rgba(212, 206, 206, 0.2);
+  cursor: pointer;
+}
+.lastMessage {
+  color: rgba(0, 0, 0, 0.5);
+  width: 160px;
+}
+.newMessage {
+  margin: auto;
+  padding: 0px 7px;
+  background-color: rgb(231, 41, 41);
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.active {
+  background-color: rgba(144, 210, 251, 0.2) !important;
+}
+.name {
+  max-width: 160px;
+}
+.boldText {
+  font-weight: bolder !important;
+  color: black;
+}
+.time {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px !important;
+  position: absolute;
+  align-self: flex-start;
+}
+.options_container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.options {
+  display: none;
+}
+.delete {
+  color: rgb(252, 124, 124);
+}
+.delete:hover {
+  color: rgb(253, 0, 0);
+}
+.MessageItem_container:hover > .options_container > .options {
+  display: block;
+}
+@media (max-width: 998px) {
+  .newMessage {
+    margin: auto 10px;
+  }
+}
+@media (max-width: 998px) and (min-width: 790px) {
+  .lastMessage {
+    width: 600px;
+  }
+  .name {
+    max-width: 600px;
+  }
+}
+@media (max-width: 790px) and (min-width: 520px) {
+  .lastMessage {
+    width: 340px;
+  }
+  .name {
+    max-width: 340px;
+  }
+}

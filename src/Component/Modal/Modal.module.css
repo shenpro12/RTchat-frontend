@@ -1,0 +1,87 @@
+.container {
+  z-index: 10;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.container:hover {
+  cursor: default;
+}
+.wrap {
+  background-color: white;
+  width: 376px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  width: 100%;
+}
+.header > p,
+.close {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: auto 0px;
+}
+.close {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.close:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.content {
+  padding: 10px 15px;
+}
+.content > p {
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+.options {
+  width: 100%;
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.options > p {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.options > p:hover {
+  cursor: pointer;
+}
+.btn_cancel {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btn_cancel:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.btn_accept {
+  background-color: blue;
+  color: white;
+}
+.btn_accept:hover {
+  background-color: rgb(67, 67, 255);
+  color: white;
+}

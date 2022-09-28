@@ -1,0 +1,168 @@
+.container {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(225deg, #ffdee9 0%, #b5fffc 100%);
+}
+.container > h1 {
+  background: linear-gradient(90deg, #ff0090 0%, #784ba0 50%, #0173c4 100%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding-top: 15vh;
+  font-weight: 700;
+  font-size: 60px;
+}
+.container > h3 {
+  background: linear-gradient(90deg, #0173c4 0%, #784ba0 50%, #ff0090 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.container > p {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+.container > div {
+  padding: 15px;
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
+  border-radius: 15px;
+}
+
+.center {
+  margin: auto;
+}
+.container > div > div > div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+.container > div > h1 {
+  background: linear-gradient(90deg, #0173c4 0%, #784ba0 50%, #ff0090 100%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.container > div > p {
+  color: rgb(48, 48, 238);
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: inline-block;
+  padding: 0px 30px;
+}
+.container > div > h3 {
+  color: red;
+  font-size: 13px;
+}
+.container > div > p:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 252);
+}
+.container > div > div > div:focus-within {
+  border-bottom: 1px solid rgb(4, 0, 255);
+}
+.container > div > div > div > input {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.container > div > button {
+  display: block;
+  margin: 20px auto 0px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 0px;
+  background-color: rgba(77, 1, 255, 0.745);
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+.container > div > button:hover {
+  background-color: rgba(179, 1, 255, 0.745);
+}
+.verifyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 90%;
+}
+.verifyContainer:focus-within {
+  border: 1px solid blue;
+}
+.verifyContainer > input {
+  outline: none;
+  border: none;
+  flex: 3;
+  padding: 3px 0px;
+}
+.status {
+  color: red !important;
+}
+.verifyContainer > .sendCodeBtn {
+  margin: 0px 5px 0px;
+  flex: 1;
+  font-weight: 600;
+  color: blue;
+  padding: 3px 3px;
+  border-radius: 5px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.timer {
+  margin: 0px 5px 0px;
+  flex: 1;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 3px 0px;
+  border-radius: 5px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.verifyContainer > .sendCodeBtn:hover {
+  cursor: pointer;
+  background-color: rgba(109, 109, 109, 0.1);
+}
+.verifyHeader {
+  text-align: left;
+  font-weight: 600 !important;
+  color: blue !important;
+}
+.verifyHeader:hover {
+  cursor: default !important;
+}
+.verifyBtn {
+  padding: 10px 0px;
+  background-color: blue;
+  color: white !important;
+  border-radius: 5px;
+  max-width: 50%;
+  margin: 5px auto;
+}
+.verifyBtn:hover {
+  cursor: pointer;
+  background-color: rgb(67, 67, 254);
+}
+@media (max-width: 420px) {
+  .container > div {
+    width: 90%;
+  }
+  .container > div > div > div > input {
+    width: 90%;
+  }
+}

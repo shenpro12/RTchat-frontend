@@ -1,0 +1,21 @@
+.loadingContainer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadingContainer > p {
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.spin {
+  color: blue;
+  font-size: 20px;
+}

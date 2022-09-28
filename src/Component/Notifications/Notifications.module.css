@@ -1,0 +1,167 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0px;
+  position: relative;
+}
+.container {
+  height: 100vh;
+  width: 344px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.1s linear;
+  background-color: white;
+}
+
+.notification_container {
+  margin-top: 15px;
+}
+.notifyHeader_container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.deleteNotify_btn {
+  color: rgb(70, 70, 247);
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+.deleteNotify_btn:hover {
+  cursor: pointer;
+  background-color: rgba(218, 218, 218, 0.2);
+}
+.notification_container > div > p {
+  font-weight: 500;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  padding-left: 2%;
+}
+.item_container {
+  display: flex;
+}
+.wrap:hover {
+  background-color: rgba(196, 195, 195, 0.2);
+  cursor: pointer;
+}
+.dot_container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 100%;
+  margin-right: 25px;
+}
+.notify_content {
+  margin: auto 5px;
+  max-width: 65%;
+  word-wrap: break-word;
+}
+.notify_content > span {
+  font-weight: bold;
+}
+.notify_content > span:hover {
+  color: blue;
+}
+.add_options {
+  display: flex;
+  justify-content: center;
+}
+.add_options > p {
+  margin: 5px 10px 0px 10px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.add_options > p:hover {
+  cursor: pointer;
+}
+.accept_button {
+  background-color: rgb(28, 28, 239);
+  color: white;
+}
+.accept_button:hover {
+  background-color: rgb(67, 67, 228);
+}
+.denie_button {
+  background-color: rgba(124, 123, 123, 0.2);
+}
+.denie_button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.time {
+  color: blue;
+  font-weight: bold;
+  font-size: 13px;
+}
+.options {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(102, 101, 101, 0.2);
+  position: absolute;
+  right: 0;
+  margin-right: 14%;
+  border-radius: 100%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.options:hover {
+  background-color: rgba(33, 32, 32, 0.2);
+}
+.options_icons {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.wrap:hover .options {
+  display: block;
+  text-align: center;
+}
+.option_choose {
+  padding: 5px 10px;
+  position: absolute;
+  background-color: rgb(186, 186, 186);
+  border-radius: 5px;
+  display: none;
+  right: -100%;
+}
+.active {
+  display: block !important;
+}
+.option_choose > p {
+  margin-bottom: 0px;
+  width: max-content;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 500;
+}
+.option_choose > p:hover {
+  background-color: rgb(152, 152, 152);
+}
+.options:hover > div > .option_choose {
+  display: block;
+}
+.options > div {
+  padding-top: 50%;
+  margin-top: -20%;
+}
+@media (max-width: 998px) {
+  .container {
+    border-right: none;
+    flex: 1;
+  }
+  .notify_content {
+    max-width: 80%;
+  }
+}

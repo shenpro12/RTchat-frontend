@@ -1,0 +1,314 @@
+.container {
+  z-index: 10;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.setting_container {
+  background-color: white;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 450px;
+  max-width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 10vh auto 0% auto;
+}
+.setting_container > .header_container {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header_container > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.header {
+  margin: auto 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.setting_container > div > svg:hover {
+  cursor: pointer;
+  background-color: rgba(161, 159, 159, 0.3);
+}
+.setting_container > div > svg {
+  padding: 5px 8px;
+  border-radius: 80%;
+}
+.main {
+  padding: 10px 10px 5px 10px;
+  overflow: scroll;
+  width: 100%;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.main > h3 {
+  color: blue;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+.main > div > h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px 0px 0px 0px;
+}
+.main > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main > div > p {
+  margin: 0px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.loading_container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading_container > p {
+  color: white;
+  font-weight: 700;
+  margin: 0px;
+  font-size: 18px;
+}
+.privacy,
+.security {
+  justify-content: flex-start !important;
+  align-items: center;
+  margin: 5px 0px 10px 0px;
+}
+.security {
+  padding-top: 10px !important;
+  border-top: 1px solid rgba(98, 98, 98, 0.2);
+}
+.shield {
+  margin-right: 5px;
+  color: green;
+}
+.lock {
+  margin-right: 5px;
+  color: red;
+}
+.security_item {
+  margin: 0px;
+  padding: 10px 3px;
+  font-weight: 600;
+  transition: 0.1s linear;
+}
+.security_item:hover {
+  cursor: pointer;
+  background-color: rgba(145, 178, 255, 0.2);
+}
+.lougout_btn {
+  color: red;
+}
+.lougout_btn:hover {
+  background-color: rgba(255, 145, 145, 0.2);
+}
+.back {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 5px 0px 0px;
+  color: black;
+  padding: 5px;
+  border-radius: 20px;
+}
+.back:hover {
+  cursor: pointer;
+  background-color: rgba(161, 159, 159, 0.3);
+}
+.center {
+  flex: 1;
+  text-align: center;
+}
+.changePassword_container > div {
+  width: 100%;
+  text-align: center;
+  margin: 25% 0px 0px 0px;
+}
+.changePassword_container > div > p {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.changePassword_container > div > div > input {
+  border: none;
+  outline: none;
+  padding: 5px 0px;
+  width: 100%;
+  font-size: 15px;
+  background-color: transparent;
+}
+.changePassword_container > div > div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 0px 0px 10px 0px;
+  width: 50%;
+}
+.changePassword_container > div > div:focus-within {
+  border-bottom: 1px solid blue;
+}
+.changePassword_container {
+  overflow: scroll;
+  background: linear-gradient(90deg, #fcc1e2 0%, #e1bfff 50%, #cfebff 100%);
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+.changePassword_container::-webkit-scrollbar {
+  display: none;
+}
+.options_container {
+  margin: 0px !important;
+  display: flex;
+  justify-content: flex-end;
+  width: 90% !important;
+}
+.options_container > p {
+  padding: 5px 10px;
+  margin: 15px 10px !important;
+  border-radius: 5px;
+  font-size: 16px !important;
+}
+.options_container > p:hover {
+  cursor: pointer;
+}
+.cancel {
+  background-color: rgba(126, 126, 126, 0.3);
+}
+.cancel:hover {
+  background-color: rgba(64, 64, 64, 0.3);
+}
+.accept {
+  background-color: blue;
+  color: white;
+}
+.accept:hover {
+  background-color: rgb(109, 109, 251);
+  color: white;
+}
+.status {
+  font-size: 13px !important;
+  color: red;
+  width: 100%;
+  margin-bottom: 3% !important;
+}
+.loginItem_container {
+  display: flex;
+  padding: 15px 10px;
+  width: 100%;
+}
+.loginItem_container:hover {
+  cursor: pointer;
+  background-color: rgba(176, 176, 176, 0.2);
+}
+.loginItem_container:hover > .deleteDevice {
+  display: block;
+}
+.loginItem_container > div {
+  flex: 1;
+}
+.loginItem_container > div > p {
+  font-size: 16px;
+  margin: 0px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.icons {
+  font-size: 25px;
+  margin: 5px 0px 0px;
+}
+.deleteDevice {
+  color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  display: none;
+}
+.deleteDevice :hover {
+  color: red;
+}
+.time {
+  color: blue;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+.ua {
+  font-size: 12px !important;
+  margin: 0px 5px 0px 10px !important;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600 !important;
+}
+.desktop {
+  font-size: 20px !important;
+}
+.twoStep_container {
+  padding: 5px 10px;
+}
+.twoStep_container > div {
+  display: flex;
+  justify-content: space-between;
+}
+.twoStep_container > div > p {
+  margin: auto 0px;
+  font-weight: 600;
+}
+.password_container {
+  justify-content: center !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.password_container > div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 5px;
+  width: 50%;
+}
+.password_container > div:focus-within {
+  border-bottom: 1px solid blue;
+}
+.password_container > div > input {
+  outline: none;
+  border: none;
+}
+.twoStep_status {
+  font-weight: 600;
+  color: red;
+  text-align: center;
+  margin: 0px;
+}
+.btn_disable {
+  background-color: rgba(103, 151, 255, 0.3);
+}
+.btn_disable:hover {
+  background-color: rgba(103, 151, 255, 0.3);
+  cursor: default !important;
+}
+.LoginHistories_container {
+  overflow: scroll;
+}
+.LoginHistories_container::-webkit-scrollbar {
+  width: 10px;
+}
+.LoginHistories_container::-webkit-scrollbar-thumb {
+  background-color: rgba(92, 91, 91, 0.5);
+  border-radius: 5px;
+}

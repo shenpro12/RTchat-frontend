@@ -1,0 +1,70 @@
+.container {
+  margin-top: 15px;
+}
+.container > div {
+  position: relative;
+}
+.icons {
+  padding: 15px 0px;
+  width: 100%;
+  text-align: center;
+}
+.icons:hover {
+  cursor: pointer;
+  background-color: #8cc4ee;
+}
+.active {
+  background-color: #2500f7 !important;
+}
+.notify_number {
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  top: 0;
+  right: 0;
+  margin: 6px 12px 0px 0px;
+  border-radius: 100%;
+  font-size: 10px;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+}
+.loading_container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading_container > p {
+  color: white;
+  font-weight: 700;
+  margin: 0px;
+  font-size: 18px;
+}
+.count_container {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  right: 0;
+  margin-right: 10px;
+  margin-top: -10%;
+}
+.count {
+  color: white;
+  font-weight: 700;
+  font-size: 9px;
+  margin: 0px;
+}

@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  width: 80px;
+  background-color: #0091ff;
+  position: relative;
+}
+.notify_container {
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 280px;
+  height: max-content;
+  bottom: 0;
+  margin-bottom: 50%;
+  margin-left: 50%;
+  border-radius: 5px;
+  z-index: 15;
+  padding: 10px 5px;
+}
+.notify_container > div {
+  display: flex;
+}
+.notify_container > div > p {
+  font-weight: 600;
+  margin: 0px;
+}
+.notify_container > h3 {
+  font-weight: 700;
+  margin: 0px 0px 8px 5px;
+  font-size: 17px;
+}
+.notify_container > div > p > span {
+  font-weight: 700;
+  color: blue;
+}
